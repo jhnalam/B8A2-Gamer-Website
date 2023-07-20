@@ -5,9 +5,11 @@
 body {
     font-family: 'Work Sans', sans-serif;
 }
-body button{
+
+body button {
     cursor: pointer;
 }
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -183,6 +185,7 @@ nav .nav-menu a:hover {
 }
 
 /* online games part */
+
 .online-games {
     margin: 0 100px;
 }
@@ -219,8 +222,9 @@ nav .nav-menu a:hover {
 
 .image img {
     width: 100%;
-
-
+    border: 2px solid #fff;
+    opacity: 1;
+    transition: .5s ease;
 }
 
 .image figcaption {
@@ -228,6 +232,35 @@ nav .nav-menu a:hover {
     font-size: 16px;
     font-weight: 500;
     line-height: 30px;
+}
+
+.image {
+    position: relative;
+}
+
+.hover-link {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.hover-link img{
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+}
+.hover-link p{
+    color: #FF42A5;
+}
+.image:hover img{
+    opacity: 0.3;
+    border: 2px solid #FF42A5;
+    border-radius: 15px;
+}
+.image:hover .hover-link{
+    opacity: 1;
 }
 
 .play-instant {
@@ -281,16 +314,19 @@ nav .nav-menu a:hover {
 }
 
 /* career part start */
-.career{
+.career {
     background: #FF42A5;
 
 }
-.career-content{
+
+.career-content {
     margin: 0 90px;
 }
+
 .career-part {
     display: flex;
 }
+
 .career-part>div {
     width: 50%;
 }
@@ -485,9 +521,11 @@ footer p {
         align-items: center;
         margin-top: 20px;
     }
+
     nav .nav-menu a {
         padding: 20px 0;
     }
+
     .banner {
         flex-direction: column;
         margin: 0;
@@ -588,23 +626,29 @@ footer p {
         margin-right: 100px;
         margin-left: 100px;
     }
-    .career-part{
+
+    .career-part {
         flex-direction: column;
     }
-    .career-content{
+
+    .career-content {
         margin: 5px;
     }
+
     .career-part>div {
         width: 95%;
     }
-    .career-list>div{
+
+    .career-list>div {
         width: 50%;
     }
-    .career-list h6{
+
+    .career-list h6 {
         font-size: 11px;
     }
 
 }
+
 /* responsive medium device */
 @media screen and (min-width:576px) and (max-width:960px) {
     nav {
@@ -720,19 +764,24 @@ footer p {
         margin-right: 100px;
         margin-left: 100px;
     }
-    .career-part{
+
+    .career-part {
         flex-direction: column;
     }
-    .career-content{
+
+    .career-content {
         margin: 5px;
     }
+
     .career-part>div {
         width: 95%;
     }
-    .career-list>div{
+
+    .career-list>div {
         width: 50%;
     }
-    .career-list h6{
+
+    .career-list h6 {
         font-size: 1.25rem;
     }
 
