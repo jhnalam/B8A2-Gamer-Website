@@ -40,12 +40,11 @@ nav .nav-logo h3 span {
 
 nav .nav-menu a {
     color: #3C354F;
-    font-size: 18px;
+    font-size: 1rem;
     font-weight: 500;
     text-decoration: none;
     padding: 20px 25px;
     transition: all linear .3s;
-
 }
 
 nav .nav-menu a img {
@@ -485,7 +484,9 @@ footer p {
         align-items: center;
         margin-top: 20px;
     }
-
+    nav .nav-menu a {
+        padding: 20px 0;
+    }
     .banner {
         flex-direction: column;
         margin: 0;
@@ -497,6 +498,7 @@ footer p {
 
     .banner-content {
         margin-left: 40px;
+        text-align: center;
     }
 
     .banner-content h3 {
