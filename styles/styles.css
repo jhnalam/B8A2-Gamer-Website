@@ -378,7 +378,7 @@ nav .nav-menu a:hover {
     display: flex;
 }
 
-.career button {
+.career-content button {
     color: #FF42A5;
     font-size: 1rem;
     font-weight: 600;
@@ -387,6 +387,12 @@ nav .nav-menu a:hover {
     background: #fff;
     border-radius: 48px;
     border: none;
+    transition: all linear .3s;
+}
+.career-content button:hover{
+    background: #4EC5F7;
+    transition: all linear .3s;
+    color: #fff;
 }
 
 
